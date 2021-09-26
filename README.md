@@ -13,8 +13,9 @@ And you can see that I omit 1 from every cell if it's not 0, basically i am spen
 
 What now ? We will omit the adjacent surfaces and we will do it in 3 parts!</br>
 First adjacent rows at the same layer(area -= 2 if both adjacent(horizantally) cell bigger than 0(not empty)).</br>
-2-Adjacent columns at the same layer.</br>
-3-Adjacent tops between layers.</br>
+2-Adjacent columns at the same layer(area -= 2).</br>
+3-Adjacent tops between layers(area -= 2).</br>
 
+And we are done !
 	
 """
