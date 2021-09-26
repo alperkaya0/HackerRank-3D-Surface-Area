@@ -5,7 +5,8 @@ I want to add my comment at discussion tab:
 
 This question looks really hard at first but when you realise that you need to think from bottom to up, it gets really easy.Let me tell you about my solution and give code of it.
 </br>
-![](https://prnt.sc/1tpx631)
+
+https://prnt.sc/1tpx631
 
 At first let's just build our toy from bottom to up and let's consent surface area of each block as 6.</br>
 And you can see that I omit 1 from every cell if it's not 0, basically i am spending my blocks to build 3d toy.</br>
