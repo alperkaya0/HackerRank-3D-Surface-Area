@@ -10,7 +10,7 @@ def surfaceArea(A):
             B[idx].append(col)
     matrices.append(B)
     
-    while(not allzero(A)):
+    while(not allzero(A)):#Prepare matrices as shown at picture at readme
         for idx,row in enumerate(A):
             for idx2,col in enumerate(row):
                 if A[idx][idx2] != 0:
@@ -30,7 +30,7 @@ def surfaceArea(A):
     
     print(area)
     
-    for matrix in matrices:
+    for matrix in matrices:#adjacent rows
         for row in matrix:
             for idx,_ in enumerate(row):
                 if idx < len(row) -1:
@@ -41,7 +41,7 @@ def surfaceArea(A):
     
     rowlen = len(A)
     collen = len(A[0])
-    for matrix in matrices:
+    for matrix in matrices:#adjacent cols
         for rowi,row in enumerate(matrix):
             for coli,item in enumerate(row):
                 if rowi < len(matrix) - 1:
@@ -53,7 +53,7 @@ def surfaceArea(A):
     rowlen = len(A)
     collen = len(A[0])
     
-    for idx,_ in enumerate(matrices):
+    for idx,_ in enumerate(matrices):#adjacent tops between layers
         if idx < len(matrices)-1:
             for row in range(rowlen):
                 for col in range(collen):
@@ -64,7 +64,7 @@ def surfaceArea(A):
     
     return area
 
-def allzero(A):
+def allzero(A):#returns true if all elements of a matrix are 0
     result = True
     for row in A:
         for item in row:
